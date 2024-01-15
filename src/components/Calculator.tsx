@@ -191,7 +191,7 @@ function Calculator() {
               </FormControl>
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <TextField
                 label="Peso (kg)"
                 type="number"
@@ -200,7 +200,7 @@ function Calculator() {
                 fullWidth
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <TextField
                 label="Altura (cm)"
                 type="number"
@@ -209,7 +209,7 @@ function Calculator() {
                 fullWidth
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <TextField
                 label="Idade"
                 type="number"
@@ -218,7 +218,7 @@ function Calculator() {
                 fullWidth
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <FormControl fullWidth>
                 <InputLabel id="gender">Gênero</InputLabel>
                 <Select
@@ -235,7 +235,7 @@ function Calculator() {
             </Grid>
             {formulaSelecionada.includes("Distribuição Macro Nutrientes") && (
               <>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <TextField
                     label="Total de Calorias"
                     type="totalCalorias"
@@ -244,7 +244,7 @@ function Calculator() {
                     fullWidth
                   />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <TextField
                     label="Porcentagem de Carboidratos (%)"
                     type="number"
@@ -253,7 +253,7 @@ function Calculator() {
                     fullWidth
                   />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <TextField
                     label="Porcentagem de Proteinas (%)"
                     type="number"
@@ -262,7 +262,7 @@ function Calculator() {
                     fullWidth
                   />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <TextField
                     label="Porcentagem de Lipídios (%)"
                     type="number"
@@ -295,28 +295,28 @@ function Calculator() {
               </Typography>
             </Grid>
             {formulaSelecionada.includes("IMC") && (
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6} lg={6}>
                 <Typography variant="body1">
                   Seu IMC é: <strong>{imc}</strong>
                 </Typography>
               </Grid>
             )}
             {formulaSelecionada.includes("TMB Harris Benedict") && (
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6} lg={6}>
                 <Typography variant="body1">
                   Sua TMB Harris Benedict é: <strong>{tmbHarris}</strong>
                 </Typography>
               </Grid>
             )}
             {formulaSelecionada.includes("TMB Mifflin St Jeor") && (
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6} lg={6}>
                 <Typography variant="body1">
                   Sua TMB Mifflin St Jeor é: <strong>{tmbMifflin}</strong>
                 </Typography>
               </Grid>
             )}
             {/* {formulaSelecionada.includes("Peso Ideal") && (
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6} lg={6}>
                 <Typography variant="body1">
                   Seu Peso Ideal é: <strong>{pesoIdeal}</strong>
                 </Typography>
@@ -325,22 +325,22 @@ function Calculator() {
 
             {formulaSelecionada.includes("Distribuição Macro Nutrientes") && (
               <>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <Typography variant="body1">
                     Total de Calorias: <strong>{totalCalorias}</strong>
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <Typography variant="body1">
                     Carboidratos: <strong>{macros[0]}</strong>
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <Typography variant="body1">
                     Proteínas: <strong>{macros[1]}</strong>
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6} lg={6}>
                   <Typography variant="body1">
                     Lipídios: <strong>{macros[2]}</strong>
                   </Typography>
